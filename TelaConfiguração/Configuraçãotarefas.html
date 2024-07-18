@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/configuração.css">
+    <script src="./assets/js/configuracaotarefas.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-tarefa">
+            <div class="config-tarefa">
+                <a href="./Configuração.html"><img src="./assets/img/Arrow-back.png" alt=""></a>
+                <h1>Administração Tarefas</h1>
+                <div class="search">
+                    <label class="pesquisa" for="termo">Pesquise uma tarefa:</label><br>
+                    <input type="text" id="termo" name="termo" placeholder="Pesquise um item">
+                    <input class="pesquisa-btn" type="button" value="Pesquisar" onclick="searchTarefas()">
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Descrição</th>
+                            <th>Data de Entrega</th>
+                            <th>Colaboradores</th>
+                            <th>Fofokoins</th>
+                            <th>status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tarefas-table-body">
+                        <!-- Dados dos usuários serão inseridos aqui -->
+                    </tbody>
+                </table>
+                
+                <!-- Formulário de edição -->
+                <div id="edit-form" style="display:none;">
+                    <input type="hidden" id="edit-id">
+                    <label for="edit-titulo">Titulo:</label>
+                    <input type="text" id="edit-titulo">
+                    <label for="edit-descricao">Descrição:</label>
+                    <input type="text" id="edit-descricao">
+                    <label for="edit-data-entrega">Data de Entrega:</label>
+                    <input type="datetime" id="edit-data-entrega">
+                    <label for="edit-usuario">Colaboradores:</label>
+                    <input type="text" id="edit-usuario">
+                    <label for="edit-fofokoins">Fofokoins:</label>
+                    <input type="number" id="edit-fofokoins">
+                    <label for="edit-status">Status Tarefa:</label>
+                    <input type="text" name="edit-status" id="edit-status">
+                    <button id="edit-save-button" type="button">Salvar</button>
+                    <button type="button" onclick="document.getElementById('edit-form').style.display='none'">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/telaCadastro.css">
+    <script src="./assets/js/Cadastro.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="./assets/img/forms-animate.svg" alt="">
+        </div>
+
+        <div class="forms">
+            <form action="http://localhost:8080/usuarios" method="POST">
+                <div class="arrow">
+                    <a href="../telalogin.html"><img src="assets/img/Arrow-back.png" alt="Voltar"></a>
+                </div>
+
+                <div class="text-inside">                    
+                    <h1>Realize o seu cadastro</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome completo</label>
+                        <input class="nome" type="text" name="nome" placeholder="Insira o seu nome completo">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="e-mail">E-mail</label>
+                        <input class="email" type="email" name="e-mail" placeholder="Insira o seu e-mail">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="telefone">Telefone</label>
+                        <input class="telefone" type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Senha">Senha</label>
+                        <input class="senha" id="Senha" type="password" name="Senha" placeholder="Insira a sua senha">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="age">Selecione a sua idade:</label>
+                        <select class="idade" id="age" name="idade">
+                            <script>
+                                for (let i = 18; i <= 50; i++) {
+                                    document.write(`<option value="${i}">${i} anos</option>`);
+                                }
+                            </script>
+                        </select>
+                    </div>
+
+                    <div class="input-checked">
+                        <input id="check" type="checkbox" name="check">
+                        <label for="check">Aceito receber comunicações por meio dos dados informados.</label>
+                    </div>
+
+                    <div class="info">
+                        <h1>Ao preencher o formulário, você concorda com o nossos termos de uso e nossa política de privacidade.</h1>
+                    </div>
+
+                    <div class="btn">
+                        <a href="../TelaInicial/telainicial.html"><button type="submit">Registrar</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #6C9B8B;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container-tarefa {
+    display: inline-block;
+    margin: auto;
+    background-color: #E8C99C;
+    width: 80%;
+    height: 142vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+img {
+    margin-left: 2rem;
+    width: 30px;
+    height: 30px;
+}
+
+.config-tarefa {
+    width: 100%;
+    height: 30vh;
+    margin-top: 2rem;
+}
+
+
+.adm {
+    background-color: #3B2D2A;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.adm a {
+    text-decoration: none;
+}
+
+.adm:hover {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #3B2D2A;
+    background-color: #6C9B8B;
+    font-weight: bold;
+}
+
+
+.config-tarefa h1 {
+    font-size: 2.5rem;
+    color: #3B2D2A;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.pesquisa {
+   font-size: 2rem;
+   color: #3B2D2A;
+   font-weight: 500;
+   margin-left: 0.6rem;
+}
+
+.search input {
+    margin: 0.6rem;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    border: none;
+}
+
+.search .pesquisa-btn {
+    background-color: #3B2D2A;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.pesquisa-btn:hover{
+    background-color: #6C9B8B;
+}
+
+::placeholder {
+    color: #3B2D2A;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
+
+
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+    width: 99%;
+}
+th, td {
+    border: 1px solid #3B2D2A;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #6C9B8B;
+}
+.botao-editar, .botao-remover {
+    margin-left: 10px;
+}
+
+td button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #3B2D2A;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.store input {
+    margin: 0.6rem;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    border: none;
+}
+
+.store .pesquisa-btn {
+    background-color: #3B2D2A;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+#edit-form {
+    width: 25%;
+    height: 40vh;
+   
+    margin-left: 0.6rem;
+}
+
+#edit-form input {
+    margin: 0.5rem;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    border: none;
+    color: #3B2D2A;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+#edit-form input:hover {
+    background-color: #FAF9E7;
+}
+
+#edit-form input:focus-visible{
+    outline: 1px solid #3B2D2A;
+}
+
+
+#edit-form label {
+    margin: 0.5rem;
+    color: #3B2D2A;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#edit-form button {
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #3B2D2A;
+    box-shadow: 1px 1px 6px #0000001c;
+    margin-left: 0.6rem;
+    margin-top: 1rem;
+}

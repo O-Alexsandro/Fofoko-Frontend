@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/telainicial.css">
+    <script src="/TelaInicial/assets/js/TelaInicial.js" defer=""></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu-lateral">
+            <div class="logo-name">
+                <img src="./assets/img/Fofoko.png" alt="Logo Fofoko">
+                <h1>Fofoko</h1>
+            </div>
+
+            <div class="menu">
+                <div class="icons-lateral">
+                    <img src="./assets/img/car-shop.png" alt="">
+                    <a href="../TelaLoja/TelaLoja.html"><h1>Loja</h1></a>
+                </div>
+
+                <div class="icons-lateral">
+                    <img src="./assets/img/ranking.png" alt="">
+                    <a href="../TelaRanking/Ranking.html"><h1>Ranking</h1></a>
+                </div>
+
+                <!-- <div class="icons-lateral">
+                    <img src="./assets/img/Dash.png" alt="">
+                    <h1>Relatórios</h1>
+                </div> -->
+
+                <div class="icons-lateral">
+                    <img src="./assets/img/chatbot.png" alt="">
+                    <a href="../TelaBot/bot.html"><h1>FofokoBot</h1></a>
+                </div>
+
+                <div class="icons-lateral">
+                    <img src="./assets/img/Engrenagem.png" alt="">
+                    <a href="../TelaConfiguração/Configuração.html"><h1>Administração</h1></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-header">
+                <img src="./assets/img/FofokoFundo.png" alt="">
+                <div class="profile">                    
+                    <h1 id="nomeUsuario"></h1>                    
+                    <div class="infos">
+                        <div class="container-coins">
+                            <div class="coins">
+                                <span id="coins"></span>
+                            </div>
+                                <span class="coins-name">Fofokoins</span>
+                             </div>    
+                           <!-- <div class="notification">
+                                <img class="notification" src="./assets/img/notificação.png" alt="">  
+                            </div> -->
+                        </div>
+                    
+                    </div>
+                <div class="position-ranking">
+                    <h1>Posição no Ranking</h1>
+                    <div class="position-personalization">
+                        <img src="./assets/img/medalha-de-ouro.png" alt="">
+                        <span>1° lugar</span>
+                    </div>
+                </div>
+
+                <div class="btn-loja">
+                    <a href="../TelaItem/Item.html"><button type="button">+ Inserir na loja</button></a>
+                </div>
+
+            </div>
+
+            <div class="content-task">
+
+                <div class="my-tasks">
+                        <div class="titles">
+                            <h1>Minhas Tarefas</h1>
+                            <a href="../TelaTarefa/tarefa.html"><button type="button">+ Inserir tarefa</button></a>
+                        </div>
+                    <div class="head-tasks">
+                        <span>Recentes</span>
+                        <span>Hoje</span>
+                        <span>Amanhã</span>
+                        <span>Depois</span>
+                    </div>
+
+                    <div id="tarefasContainer"></div>
+
+                    <div id="taskModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <span id="id" style="display: none;"></span>
+                            <h1 id="modalTitle"></h1>
+                            <p id="modalDescription"></p>
+                            <span id="fofokoins"></span>
+                            <span id="dataEntrega"></span>
+                            <span id="statusTarefa"></span>
+                            <button id="concluirTarefaBtn" class="btn btn-primary">Concluir Tarefa</button>
+                            <div id="modalImages"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pomodoro-dashboard">
+                    <div class="content-pomodoro">
+                        <div class="pomodoro-title">
+                            <h1>Método Pomodoro</h1>
+                        </div>
+                        <div class="image-pomodoro">
+                            <a href="../TelaPomodoro/telapomodoro.html"><img src="./assets/img/tempo-rapido.png" alt="" width="100px"></a>
+                        </div>
+                    </div>
+
+                    <div class="content-dashboard">
+
+                        <div class="dashboard-title">
+                            <h1>Relatórios</h1>
+                        </div>
+
+                        <div class="dashboard">
+                                <h1>Report de Tarefas</h1>
+
+                            <div class="dash-legend">
+                                <!-- <img src="./assets/img/Dashboard.png" alt=""> -->
+                                <div class="legend">
+                                    <span id="tConcluidas"></span>
+                                    <span id="tPendentes"></span>
+                                </div>
+                            </div>
+                            <!-- <a href="#"><button class="btn-dashboard" type="button">Visualização completa</button></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wiki">
+                    <div class="sts-wiki">
+                            <h1>Leia Como Gerir Tarefas</h1>
+                    </div>
+
+                    <div class="content-wiki">
+                        <img src="./assets/img/Tarefas.jpg" alt="">
+                        <h1>Confira as dicas da Gestão de Tempo</h1>
+                    </div>
+
+                    <div class="content-wiki">
+                        <img src="./assets/img/Tarefas-diarias.jpg" alt="">
+                        <h1>Organize Suas Tarefas Diárias</h1>
+                    </div>
+
+                    <div class="content-wiki">
+                        <img src="./assets/img/Gestão-de-tarefas.jpg" alt="">
+                        <h1>Melhore a Gestão de Tarefas</h1>
+                    </div>
+
+                    <div class="content-wiki">
+                        <img src="./assets/img/prioridade.jpg" alt="">
+                        <h1>Priorize e Complete Tarefas</h1>
+                    </div>
+
+                    <div class="content-wiki">
+                        <img src="./assets/img/organizar.jpg" alt="">
+                        <h1>Métodos para Organizar Tarefas</h1>
+                    </div>
+
+                </div>
+  
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

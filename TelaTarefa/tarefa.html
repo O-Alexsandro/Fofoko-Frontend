@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tarefa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/tarefa.css">
+    <script src="./assets/js/tarefas.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <form action="#">
+                <div class="arrow">
+                    <a href="../TelaInicial/telainicial.html"><img src="./assets/img/Arrow-back.png" alt="Voltar"></a>
+                </div>
+
+                <div class="text-inside">                    
+                    <h1>Adicione a sua tarefa</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="titulo">Titulo da tarefa</label>
+                        <input class="titulo" id="titulo" type="text" name="titulo" placeholder="Insira o título de sua tarefa">
+                    </div>
+
+                    <div id="descrição" class="input-box">
+                        <label for="descrição">Descrição da tarefa</label>
+                        <textarea class="descricao" name="descrição" id="descrição" rows="4" placeholder="Descreva a sua tarefa aqui"></textarea>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="dataEntrega">Data de entrega</label>
+                        <input class="dataEntrega" id="dataEntrega" type="datetime" name="dataEntrega" placeholder="Insira a data de entrega">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="statusTarefa">Status:</label>
+                        <select id="statusTarefa" name="statusTarefa" required>
+                            <option value="pendente">Pendente</option>
+                            <option value="concluido">Concluído</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="colaboradores">Colaboradores</label>
+                        <select class="colaboradores" id="colaboradores" name="colaboradores">
+                        
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="moeda">Fofokoins</label>
+                        <input class="moeda" id="moeda" type="number" name="moeda" placeholder="Selecione a quantidade de Fofokoins">
+                    </div>
+
+                    <div class="btn">
+                        <a href=""><button type="submit">Inserir tarefa</button></a>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

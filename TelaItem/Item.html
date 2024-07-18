@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Item</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/item.css">
+    <script src="./assets/js/item.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <form action="http://localhost:8080/item/produto" method="POST">
+                <div class="arrow">
+                    <a href="../TelaLoja/TelaLoja.html"><img src="./assets/img/Arrow-back.png" alt="Voltar"></a>
+                </div>
+
+                <div class="text-inside">                    
+                    <h1>Adicione o seu item</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome do item</label>
+                        <input class="nome" id="nome" type="text" name="nome" placeholder="Insira o nome do item">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="descrição">Descrição</label>
+                        <input class="descricao" id="descricao" type="text" name="descrição" placeholder="Insira a descrição do item">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="quantidade">Quantidade</label>
+                        <input class="quantidade" id="quantidade" type="number" name="quantidade" placeholder="Insira a quantidade de items">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="imagem">Imagem</label>
+                        <input class="imagem" id="imagem" type="text" name="imagem" placeholder="Insira a imagem do item">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="valor">Valor em Fofokoins</label>
+                        <input class="valor" id="valor" type="number" name="valor" placeholder="Insira o valor em Fofokoins">
+                    </div>
+
+                    <div class="btn">
+                        <a href="#"><button type="submit">Inserir item</button></a>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

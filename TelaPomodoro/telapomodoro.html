@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./css/pomodoro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./js/pomodoro.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../TelaInicial/telainicial.html"><img src="./img/Arrow-back.png" alt=""></a>
+        <h1>Pomodoro Fofoko</h1>
+        <div class="timer">
+            <div class="time-display">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="startButton" onclick="startTimer()">Iniciar</button>
+                <button id="pauseButton" onclick="pauseTimer()" disabled>Pausar</button>
+                <button id="resetButton" onclick="resetTimer()">Limpar</button>
+            </div>
+        </div>
+        <div class="status">
+            <p id="statusText">Aproveite o tempo de concentração!</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
