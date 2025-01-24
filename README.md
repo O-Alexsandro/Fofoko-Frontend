@@ -19,13 +19,13 @@ Cronometro Pomodoro, relatórios e administração
 ## Demonstração
 
 ### Tela login
-<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/main/Fofoko_Tela_Login.png.jpg?token=GHSAT0AAAAAACU53LLPAQROK6NCSUXYG2KCZVUBFYA" width = 600px>  
+<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/refs/heads/main/Fofoko_Tela_Login.png.jpg" width = 600px>  
 
 ### Tela Inicial
-<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/main/Fofoko_Tela_Inicial.png?token=GHSAT0AAAAAACU53LLOUW6HUNPCA7X3TUDGZVUBDAA" width = 600px>  
+<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/refs/heads/main/Fofoko_Tela_Inicial.png" width = 600px>  
 
 ### Tela Loja
-<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/main/Fofoko_Tela_Loja.png.jpg?token=GHSAT0AAAAAACU53LLOO7IUX75UXGICENCWZVUBGSQ" width = 600px>  
+<img src="https://raw.githubusercontent.com/O-Alexsandro/Fofoko-Frontend/refs/heads/main/Fofoko_Tela_Loja.png.jpg" width = 600px>  
 
 ## Autor
 - [@O-Alexsandro](https://www.github.com/O-Alexsandro)
